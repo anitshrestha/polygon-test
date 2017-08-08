@@ -9,9 +9,6 @@
  * The output is written in command line. 
  */
 
-let fs = require('fs');
-let csv=require('csvtojson');
-
 
 /**
  * Process CSV File with valid rows of polygons.
@@ -25,7 +22,8 @@ let csv=require('csvtojson');
  *  
  * @param File 
  */
-function processCSVFile(inputFile)  {        
+var processCSVFile = function( inputFile )  { 
+    let csv = require('csvtojson');       
     let polygonsArray = [];
     let polygons = [];
     let polygonSubset = [];
@@ -112,4 +110,5 @@ function validateSubset( polygonsArray, polygonSubset ) {
   return false;
 }
 
-processCSVFile('./polygon.csv');
+
+module.exports.main = processCSVFile;
