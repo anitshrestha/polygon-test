@@ -1,16 +1,4 @@
 /**
- * README
- * 
- * Go through the ReadMe.md file to execute the program.
- * 
- * Please invoke the function via command line.
- * i.e. node process-polygons.js
- * 
- * The output is written in command line. 
- */
-
-
-/**
  * Process CSV File with valid rows of polygons.
  * 
  * After processing CSV, it classify the set of 
